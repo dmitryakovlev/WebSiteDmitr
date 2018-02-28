@@ -92,6 +92,37 @@ header {
 
 
 /*screen two*/
+.portfolio__title{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.portfolio__title_main {
+    font-size: 32px;
+    color: black;
+}
+.gallery__item {
+    margin: 0 45px;
+}
+.gallery__item a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.content {
+    width:900px;
+    margin:20px auto 100px;
+}
+#galleria{
+    height:600px;
+}
+
+
+
+/*screen three*/
+.skills {
+    background-color: #fafafa;
+}
 
 .title{
     padding-top: 100px;
@@ -111,26 +142,27 @@ header {
     margin: 0 auto;
 }
 
-.feature {
-    margin-bottom: 65px;
+.skills {
+    padding-bottom: 65px;
+
 }
 
-.feature__icon {
+.skills__icon {
     font-size: 50px;
     margin-right: 35px;
 }
 
-.feature__title {
+.skills__title {
     color: black;
 }
 
-.feature__text {
+.skills__text {
     color: #898989;
 }
 
 
 
-/*screen three*/
+/*screen four*/
 
 .touch {
     background: black;
@@ -176,7 +208,7 @@ header {
 }
 
 
-/*screen four*/
+/*screen five*/
 
 footer {
     background: black;
@@ -220,7 +252,8 @@ footer {
         margin-right: 0;
     }
     .macbook{
-        margin: 80px auto 0;
+        display: none;
+        /*margin: 80px auto 0;*/
     }
     .form__input {
         margin-right: 0;
@@ -233,18 +266,40 @@ footer {
     .title__text {
         width: auto;
     }
+    .content {
+        width: 100%;
+        margin:20px auto 100px;
+    }
+    #galleria{
+        height:400px;
+    }
+    .gallery__item {
+        margin: 0 15px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .macbook {
-        width: 90%;
-        margin: 50px auto 0;
-    }
+    /*.macbook {*/
+        /*width: 90%;*/
+        /*margin: 50px auto 0;*/
+    /*}*/
     .menu {
         flex-direction: column;
     }
     .menu__item {
         text-align: center;
         margin-bottom: 10px;
+    }
+    .content {
+        width: 90%;
+        margin:20px auto 100px;
+    }
+    #galleria{
+        height:300px;
+    }
+    .gallery {
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
     }
 }
