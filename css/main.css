@@ -37,7 +37,7 @@ header {
 }
 
 .menu__item {
-    margin: 0 55px;
+    margin: 0 45px;
 }
 
 .menu__item a {
@@ -47,7 +47,7 @@ header {
 }
 
 .offer {
-    margin-top: 125px;
+    margin: 125px auto 0;
 }
 
 .offer__title {
@@ -64,6 +64,7 @@ header {
 .offer__text {
     margin-top: 15px;
     font-size: 16px;
+    line-height: 20px;
     width: 380px;
 }
 
@@ -82,9 +83,10 @@ header {
     color: #fc670f;
 }
 
-.ipad {
+.macbook {
     display: block;
-    margin: 60px auto 0;
+    margin-top: 110px;
+    width: 85%
 }
 
 
@@ -103,9 +105,9 @@ header {
 }
 
 .title__text {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
-    width: 780px;
+    width: 760px;
     margin: 0 auto;
 }
 
@@ -202,6 +204,7 @@ footer {
 @media screen and (max-width: 992px) {
     .offer {
         text-align: center;
+        margin: 80px auto 0;
     }
     .offer__text {
         margin: 20px auto;
@@ -215,6 +218,9 @@ footer {
     }
     .icons__items:nth-child(4){
         margin-right: 0;
+    }
+    .macbook{
+        margin: 80px auto 0;
     }
     .form__input {
         margin-right: 0;
@@ -230,8 +236,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .ipad {
-        width: 85%;
+    .macbook {
+        width: 90%;
+        margin: 50px auto 0;
     }
     .menu {
         flex-direction: column;
