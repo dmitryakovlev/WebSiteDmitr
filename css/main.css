@@ -47,7 +47,7 @@ header {
 }
 
 .offer {
-    margin: 125px auto 0;
+    margin: 165px auto 0;
 }
 
 .offer__title {
@@ -83,11 +83,15 @@ header {
     color: #fc670f;
 }
 
-.macbook {
+.avatar {
     display: block;
-    margin-top: 110px;
-    width: 85%
+    float:right;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
 }
+
 
 
 
@@ -101,20 +105,20 @@ header {
     font-size: 32px;
     color: black;
 }
-.gallery__item {
-    margin: 0 45px;
-}
-.gallery__item a {
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-}
+/*.gallery__item {*/
+    /*margin: 0 45px;*/
+/*}*/
+/*.gallery__item a {*/
+    /*font-size: 20px;*/
+    /*font-weight: 400;*/
+    /*color: black;*/
+/*}*/
 .content {
-    width:900px;
-    margin:20px auto 100px;
+    width: 100%;
+    margin:0px auto 100px;
 }
 #galleria{
-    height:600px;
+    height:100%;
 }
 
 
@@ -164,55 +168,30 @@ header {
 
 /*screen four*/
 
-.touch {
-    background: black;
-    color: white;
-}
-
-.touch p {
-    color: white;
-}
-
-.form {
-    text-align: center;
-}
-
-.form__input {
-    background: white;
-    font-size: 16px;
-    font-family: 'PT Sans', sans-serif;
-    border-radius: 5px;
-    border: 0;
-    width: 580px;
-    padding: 14px 0;
-    padding-left: 25px;
-    margin-right: 20px;
-    outline: none;
-}
-
-.form__btn {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    background: #fcc70f;
-    text-transform: uppercase;
-    width: 125px;
-    border-radius: 5px;
-    border: 0;
-    padding: 14px 0;
-    cursor: pointer;
-}
-
-.form__btn:hover {
-    background: #fc670f;
-}
-
-
-/*screen five*/
-
 footer {
     background: black;
-    padding: 50px 0 95px;
+    padding: 0 0 95px;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer__email {
+    margin-top:10px;
+}
+
+.footer__email a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.footer__email a:hover{
+    color: #fc670f;
+    text-decoration: none;
 }
 
 .credits {
@@ -220,7 +199,7 @@ footer {
     font-size: 16px;
     text-align: center;
     width: 150px;
-    margin: 0 auto;
+    margin: -20px auto;
 }
 
 
@@ -236,7 +215,7 @@ footer {
 @media screen and (max-width: 992px) {
     .offer {
         text-align: center;
-        margin: 80px auto 0;
+        margin: 60px auto 0;
     }
     .offer__text {
         margin: 20px auto;
@@ -251,17 +230,9 @@ footer {
     .icons__items:nth-child(4){
         margin-right: 0;
     }
-    .macbook{
+    .avatar{
         display: none;
         /*margin: 80px auto 0;*/
-    }
-    .form__input {
-        margin-right: 0;
-        width: 100%;
-    }
-    .form__btn {
-        margin-top: 15px;
-        width: 100%;
     }
     .title__text {
         width: auto;
@@ -271,7 +242,7 @@ footer {
         margin:20px auto 100px;
     }
     #galleria{
-        height:400px;
+        height:100%;
     }
     .gallery__item {
         margin: 0 15px;
@@ -283,10 +254,14 @@ footer {
         /*width: 90%;*/
         /*margin: 50px auto 0;*/
     /*}*/
+    .offer {
+        margin: 20px auto 0;
+    }
     .menu {
         flex-direction: column;
     }
     .menu__item {
+        display: none;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -295,7 +270,7 @@ footer {
         margin:20px auto 100px;
     }
     #galleria{
-        height:300px;
+        height:90%;
     }
     .gallery {
         flex-direction: column;
@@ -303,3 +278,9 @@ footer {
         line-height: 30px;
     }
 }
+
+/*@media screen and (min-width: 1200px) {*/
+    /*.offer {*/
+        /*margin: 165px auto 0 90px;*/
+    /*}*/
+/*}*/
