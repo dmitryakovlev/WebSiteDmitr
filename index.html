@@ -19,7 +19,7 @@
 
             <div class="row">
                 <div class="col-lg-12 m-auto">
-                    <nav>
+                    <nav class="scroll" id="scroll">
                         <ul class="menu d-flex justify-content-center">
                             <li class="menu__item">
                                 <a href="#potfolio">
@@ -32,7 +32,7 @@
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#touch">
+                                <a href="#footer">
                                     Contacts
                                 </a>
                             </li>
@@ -300,10 +300,10 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
 
-            <!-- Add scroll -->
+    <!-- Add scroll -->
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#header").on("click","a", function (event) {
+            $("#scroll").on("click","a", function (event) {
                 event.preventDefault();
                 var id  = $(this).attr('href'),
                     top = $(id).offset().top;
